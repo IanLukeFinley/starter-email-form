@@ -15,8 +15,9 @@
   <body>
     <main>
     <h1>Email Form</h1>
-      <form action="mailto:ianlukefinley@gmail.com">
-        <fieldset>
+
+      <form action="mailto:ianlukefinley@gmail.com" class="group">
+        <fieldset class="item">
           <legend>Your Information</legend>
           <div>
             <label for="name">Your Name:</label> 
@@ -32,7 +33,7 @@
               />
           </div>
         </fieldset>
-        <div>
+        <div class="item item-double">
           <label for="form-message">Your message:</label>
           <textarea
             id="form-message"
@@ -41,10 +42,14 @@
             required
             maxlength="200"
             placeholder = "Please type your message here."
+            cols="50"
+            rows="10"
           ></textarea>
-        </div>  
+        </div> 
+        <div class="item">
           <button type="submit">Submit</button>
          <button type="reset">Reset</button>
+        </div> 
       </form>
     </main>
   </body>
